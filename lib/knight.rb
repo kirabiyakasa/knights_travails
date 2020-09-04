@@ -61,8 +61,6 @@ class Knight
   end
 
   def check_node(coordinates, path, destination)
-    return coordinates if path == nil
-
     if coordinates == destination
       show_solution(coordinates, path, destination)
     end
@@ -75,7 +73,7 @@ class Knight
       moves += space.to_s + ", "
     end
     moves += destination.to_s 
-    puts "Start: #{path.first}  Destination: #{destination}"
+    puts "\nStart: #{path.first}  Destination: #{destination}"
     puts "Reached destination in #{turns} turns."
     puts "Path: #{moves}"
     @visited = []
