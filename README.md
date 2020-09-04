@@ -1,0 +1,1 @@
+[![Run on Repl.it](https://repl.it/badge/github/kirabiyakasa/knights_travails)](https://repl.it/github/kirabiyakasa/knights_travails)
