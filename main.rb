@@ -29,14 +29,14 @@ def start_travailing()
   answer = gets.chomp
   until answer == "1" || answer == "2"
     answer = gets.chomp
-    "\nPlease Enter a valid Input."
+    puts "\nPlease Enter a valid Input."
   end
   if answer == "1"
     starting_point = get_coordinates("starting point")
     destination = get_coordinates("destination")
     knight_moves(starting_point, destination)
   elsif answer == "2"
-    "\n Chose Randomly."
+    puts "\nChose Randomly."
     knight_moves([rand(0..7), rand(0..7)], [rand(0..7), rand(0..7)])
   end
 end
