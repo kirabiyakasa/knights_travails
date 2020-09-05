@@ -14,6 +14,7 @@ class Knight
     if @move_tree.nil?
       @move_tree = MoveTree.new(starting_point)
       filter_moves(@move_tree)
+      search_tree(@move_tree, path, destination)
     else
       build_tree(@move_tree)
       search_tree(@move_tree, path, destination)
