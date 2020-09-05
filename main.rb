@@ -9,7 +9,7 @@ end
 def get_axis(axis, position)
   puts "\nEnter #{axis} axis value for #{position}."
   value = gets.chomp
-  until (1..7).include?(value.to_i) && value.count("a-zA-Z") == 0
+  until (0..7).include?(value.to_i) && value.count("a-zA-Z") == 0
     puts "\nInavlid coordinates for #{axis}."
     value = gets.chomp
   end
